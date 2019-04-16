@@ -31,4 +31,4 @@ EXPOSE 8080
 
 # 启动程序
 WORKDIR /app
-ENTRYPOINT ["/usr/bin/java", "-jar", "easy12306-java-1.0.0.jar"]
+ENTRYPOINT ["/usr/bin/java", "-jar", "easy12306-java-1.0.0.jar", "--script.path=shell/predict.sh"]
