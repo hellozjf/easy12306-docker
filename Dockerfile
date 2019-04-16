@@ -4,7 +4,7 @@ FROM centos:7
 WORKDIR /
 RUN yum install -y epel-release 
 RUN yum install -y git wget libSM libXrender libXext python36 python36-pip java-1.8.0-openjdk-devel maven
-RUN ln -s /usr/bin/python3.6 /usr/bin/python3 && ln -s /usr/bin/pip3.6 /usr/bin/pip3
+# RUN ln -s /usr/bin/python3.6 /usr/bin/python3 && ln -s /usr/bin/pip3.6 /usr/bin/pip3
 RUN pip3 install opencv-python keras tensorflow requests
 
 # 下载必要的源代码
